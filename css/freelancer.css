@@ -6,6 +6,7 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
+  padding-top: 170px;
 }
 p {
   font-size: 20px;
@@ -73,7 +74,7 @@ header {
   color: white;
 }
 header .container {
-  padding-top: 100px;
+  padding-top: 200px;
   padding-bottom: 50px;
 }
 header img {
@@ -93,7 +94,7 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 200px;
+    padding-top: 300px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
@@ -103,8 +104,13 @@ header .intro-text .skills {
     font-size: 1.75em;
   }
 }
+
+.container.fixed {
+  padding-top: 100px;
+}
+
 .navbar-custom {
-  background: #2C3E50;
+  background: #00b49d;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
@@ -113,15 +119,20 @@ header .intro-text .skills {
 .navbar-custom a:focus {
   outline: none;
 }
+/*
 .navbar-custom .navbar-brand {
   color: white;
 }
+*/
 .navbar-custom .navbar-brand:hover,
 .navbar-custom .navbar-brand:focus,
 .navbar-custom .navbar-brand:active,
+/*
 .navbar-custom .navbar-brand.active {
   color: white;
 }
+*/
+
 .navbar-custom .navbar-nav {
   letter-spacing: 1px;
 }
@@ -160,22 +171,27 @@ header .intro-text .skills {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    padding: 25px 0;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
+    height: 400px;
+    padding: 50px 0;
+    -webkit-transition: all 0.9s;
+    -moz-transition: all 0.9s;
+    transition: all 0.9s;
   }
-  .navbar-custom .navbar-brand {
-    font-size: 2em;
+  
+  .navbar-custom .navbar-brand  {
+    height: 300px;
+    padding-left: 30px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
   }
   .navbar-custom.affix {
+    height: 170px;
     padding: 10px 0;
   }
   .navbar-custom.affix .navbar-brand {
-    font-size: 1.5em;
+    padding-left: 60px;
+    height: 150px;
   }
 }
 section {
