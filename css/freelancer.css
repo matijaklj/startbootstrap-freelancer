@@ -6,7 +6,7 @@
 body {
   font-family: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   overflow-x: hidden;
-  padding-top: 170px;
+  padding-top: 0px;
 }
 p {
   font-size: 20px;
@@ -70,11 +70,11 @@ hr.star-primary:after {
 }
 header {
   text-align: center;
-  background: #18BC9C;
+  background: #00b49d;
   color: white;
 }
 header .container {
-  padding-top: 200px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 header img {
@@ -89,12 +89,12 @@ header .intro-text .name {
   font-size: 2em;
 }
 header .intro-text .skills {
-  font-size: 1.25em;
-  font-weight: 300;
+  font-size: 2em;
+  font-weight: bold;
 }
 @media (min-width: 768px) {
   header .container {
-    padding-top: 300px;
+    padding-top: 50px;
     padding-bottom: 100px;
   }
   header .intro-text .name {
@@ -105,9 +105,11 @@ header .intro-text .skills {
   }
 }
 
+
 .container.fixed {
   padding-top: 100px;
 }
+
 
 .navbar-custom {
   background: #00b49d;
@@ -138,9 +140,10 @@ header .intro-text .skills {
 }
 .navbar-custom .navbar-nav li a {
   color: white;
+  padding-top: 65px;
 }
 .navbar-custom .navbar-nav li a:hover {
-  color: #18BC9C;
+  color: black;
   outline: none;
 }
 .navbar-custom .navbar-nav li a:focus,
@@ -170,16 +173,19 @@ header .intro-text .skills {
   border-color: #18BC9C;
 }
 @media (min-width: 768px) {
+    .navbar-brand {
+        padding-left: 60px;
+        height: 150px;
+    }
+/*
   .navbar-custom {
-    height: 400px;
     padding: 50px 0;
     -webkit-transition: all 0.9s;
     -moz-transition: all 0.9s;
     transition: all 0.9s;
   }
-  
+
   .navbar-custom .navbar-brand  {
-    height: 300px;
     padding-left: 30px;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
@@ -193,7 +199,44 @@ header .intro-text .skills {
     padding-left: 60px;
     height: 150px;
   }
+  */
 }
+
+/* test batonov */
+
+.test {
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
+.test a {
+  color: white;
+  text-decoration: none;
+  padding-top: 65px;
+  padding-right: 20px;
+}
+.test a:hover {
+  color: black;
+  outline: none;
+}
+.test a:focus,
+.test a:active {
+  color: white;
+}
+.test .active a {
+  color: white;
+  background: #18BC9C;
+}
+.test li.active a:hover,
+.test li.active a:focus,
+.test li.active a:active {
+  color: white;
+  background: #18BC9C;
+}
+
+
 section {
   padding: 100px 0;
 }

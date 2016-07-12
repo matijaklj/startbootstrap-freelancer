@@ -3,7 +3,28 @@
 (function($) {
     "use strict"; // Start of use strict
 
-   
+    $(document).ready(function(){
+
+       // hide .navbar first
+       $(".navbar").hide();
+
+       // fade in .navbar
+       $(function () {
+           $(window).scroll(function () {
+               // set distance user needs to scroll before we fadeIn navbar
+               if ($(this).scrollTop() > 400) {
+                   $('.navbar').fadeIn();
+               } else {
+                   $('.navbar').fadeOut();
+               }
+           });
+
+
+       });
+
+    });
+
+/*
     // jQuery for page scrolling feature - requires jQuery Easing plugin
     $('.page-scroll a').bind('click', function(event) {
         var $anchor = $(this);
@@ -18,7 +39,7 @@
         target: '.navbar-fixed-top',
         offset: 51
     });
-
+*/
     // Closes the Responsive Menu on Menu Item Click
     $('.navbar-collapse ul li a:not(.dropdown-toggle)').click(function() {
         $('.navbar-toggle:visible').click();
