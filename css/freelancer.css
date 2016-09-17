@@ -55,7 +55,7 @@ hr.star-light {
   border-color: white;
 }
 hr.star-light:after {
-  background-color: #18BC9C;
+  background-color: #00b49d;
   color: white;
 }
 hr.star-primary {
@@ -105,9 +105,13 @@ header .intro-text .skills {
   }
 }
 
-
+/*
 .container.fixed {
-  padding-top: 100px;
+  padding-top: 60px;
+}
+*/
+.container.fixed.mdl {
+  padding-top: 0px;
 }
 
 
@@ -236,24 +240,40 @@ header .intro-text .skills {
   background: #18BC9C;
 }
 
+@media (min-width: 767px) {
+    #navBtn {
+        padding-top: 10px;
+        margin-top: 55px;
+    }
+}
 
-section {
-  padding: 100px 0;
+@media (max-width: 767px) {
+    #navBtn {
+        padding-top: 5px;
+        margin-top: 10px;
+    }
+}
+
+@media (min-width: 767px) {
+    section {
+      padding-top: 170px;
+      padding-bottom: 130px;
+    }
 }
 section h2 {
   margin: 0;
   font-size: 3em;
 }
 section.success {
-  background: #18BC9C;
+  background: #00b49d;
   color: white;
 }
 @media (max-width: 767px) {
   section {
-    padding: 75px 0;
+    padding: 60px 0;
   }
   section.first {
-    padding-top: 75px;
+    padding-top: 65px;
   }
 }
 #portfolio .portfolio-item {
@@ -299,6 +319,10 @@ section.success {
 #portfolio * {
   z-index: 2;
 }
+.polaroid {
+    padding: 12px 12px 11px;
+}
+
 @media (min-width: 767px) {
   #portfolio .portfolio-item {
     margin: 0 0 30px;
@@ -371,7 +395,7 @@ footer .footer-below {
   background-color: #233140;
 }
 .btn-outline {
-  color: white;
+  color: #2C3E50;
   font-size: 20px;
   border: solid 2px white;
   background: transparent;
@@ -382,8 +406,8 @@ footer .footer-below {
 .btn-outline:focus,
 .btn-outline:active,
 .btn-outline.active {
-  color: #18BC9C;
-  background: white;
+  color: white;
+  background: #2C3E50;
   border: solid 2px white;
 }
 .btn-primary {
@@ -474,7 +498,7 @@ fieldset[disabled] .btn-success.active {
   display: inline-block;
   height: 50px;
   width: 50px;
-  border: 2px solid white;
+  border: 2px solid #2C3E50;
   border-radius: 100%;
   text-align: center;
   font-size: 20px;
