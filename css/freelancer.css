@@ -68,6 +68,7 @@ hr.star-primary:after {
 .img-centered {
   margin: 0 auto;
 }
+
 header {
   text-align: center;
   background: #00b49d;
@@ -93,9 +94,10 @@ header .intro-text .skills {
   font-weight: bold;
 }
 @media (min-width: 768px) {
+    /* computer size screen */
   header .container {
-    padding-top: 50px;
-    padding-bottom: 100px;
+    padding-top: 200px;
+    padding-bottom: 200px;
   }
   header .intro-text .name {
     font-size: 4.75em;
@@ -179,7 +181,7 @@ header .intro-text .skills {
 @media (min-width: 768px) {
     .navbar-brand {
         padding-left: 60px;
-        height: 150px;
+        height: 100px;
     }
 /*
   .navbar-custom {
@@ -242,8 +244,9 @@ header .intro-text .skills {
 
 @media (min-width: 767px) {
     #navBtn {
+        font-size: 20px;
         padding-top: 10px;
-        margin-top: 55px;
+        margin-top: 25px;
     }
 }
 
@@ -255,8 +258,18 @@ header .intro-text .skills {
 }
 
 @media (min-width: 767px) {
-    section {
-      padding-top: 170px;
+    #portfolio {
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    #about {
+        padding-top: 170px;
+        padding-bottom: 130px;
+    }
+
+    #contact {
+      padding-top: 130px;
       padding-bottom: 130px;
     }
 }
@@ -585,4 +598,18 @@ fieldset[disabled] .btn-success.active {
 .portfolio-modal .modal-backdrop {
   opacity: 0;
   display: none;
+}
+.polaroid-div {
+    height:100%;
+    width:100%;
+    background-color: white
+}
+.polaroid-div h4 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.delavnice-list li {
+    text-align: left;
 }
