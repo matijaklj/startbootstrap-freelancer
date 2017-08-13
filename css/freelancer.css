@@ -251,11 +251,31 @@ header .intro-text .skills {
   background: #18BC9C;
 }
 
-@media (min-width: 767px) {
+@media (min-width: 1000px) {
     #navBtn {
         font-size: 20px;
         padding-top: 10px;
         margin-top: 25px;
+        white-space: nowrap;
+    }
+
+    .breaky-2 {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1000px) {
+    #navBtn {
+        font-size: 20px;
+        padding-top: 10px;
+        margin-top: 0px;
+        padding-left: 20px;
+        padding-right: 10px;
+        white-space: nowrap;
+    }
+
+    .navbar-nav {
+      margin-top: 25px;
     }
 }
 
@@ -266,10 +286,25 @@ header .intro-text .skills {
         margin-top: 10px;
         white-space: nowrap;
     }
+
+    .breaky-2 {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .breaky { 
+       display: none;   // hide the BR tag for wider screens (i.e. disable the line break)
+    }
 }
 
 @media (min-width: 767px) {
     #portfolio {
+        padding-top: 120px;
+        padding-bottom: 130px;
+    }
+
+    #rd_zabave {
         padding-top: 120px;
         padding-bottom: 130px;
     }
@@ -305,6 +340,53 @@ section.success {
     padding-top: 65px;
   }
 }
+
+/*rd_zabave*/
+#rd_zabave .portfolio-item {
+  margin: 0 0 15px;
+  right: 0;
+}
+#rd_zabave .portfolio-item .portfolio-link {
+  display: block;
+  position: relative;
+  max-width: 400px;
+  margin: 0 auto;
+}
+#rd_zabave .portfolio-item .portfolio-link .caption {
+  background: rgba(24, 188, 156, 0.9);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: all ease 0.5s;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+}
+#rd_zabave .portfolio-item .portfolio-link .caption:hover {
+  opacity: 1;
+}
+#rd_zabave .portfolio-item .portfolio-link .caption .caption-content {
+  position: absolute;
+  width: 100%;
+  height: 20px;
+  font-size: 20px;
+  text-align: center;
+  top: 50%;
+  margin-top: -12px;
+  color: white;
+}
+#rd_zabave .portfolio-item .portfolio-link .caption .caption-content i {
+  margin-top: -12px;
+}
+#rd_zabave .portfolio-item .portfolio-link .caption .caption-content h3,
+#rd_zabave .portfolio-item .portfolio-link .caption .caption-content h4 {
+  margin: 0;
+}
+#rd_zabave * {
+  z-index: 2;
+}
+
+/*portfolio*/
 #portfolio .portfolio-item {
   margin: 0 0 15px;
   right: 0;
@@ -625,6 +707,16 @@ fieldset[disabled] .btn-success.active {
     margin-bottom: 20px;
 }
 
+.rd-location-div {
+    height:100%;
+    width:100%;
+    background-color: white
+}
+.rd-location-div h4 {
+    margin-top: 16px;
+    margin-bottom: 22px;
+}
+
 .delavnice-list li {
     text-align: left;
 }
@@ -645,4 +737,20 @@ fieldset[disabled] .btn-success.active {
         height: 650px;
         max-height: 650px;
     }
+}
+
+.text-justify {
+  text-align: justify
+}
+
+.text-left {
+  text-align: left
+}
+
+.dark-link{
+  color: #18BC9C !important; 
+}
+
+.dark-link:hover{
+  color: darkblue !important;
 }
