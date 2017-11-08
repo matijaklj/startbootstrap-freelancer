@@ -255,7 +255,7 @@ header .intro-text .skills {
     #navBtn {
         font-size: 20px;
         padding-top: 10px;
-        margin-top: 25px;
+        margin-top: 20px;
         white-space: nowrap;
     }
 
@@ -306,6 +306,11 @@ header .intro-text .skills {
 
     #rd_zabave {
         padding-top: 120px;
+        padding-bottom: 180px;
+    }
+
+      #maskote {
+        padding-top:40px;
         padding-bottom: 130px;
     }
 
@@ -753,4 +758,12 @@ fieldset[disabled] .btn-success.active {
 
 .dark-link:hover{
   color: darkblue !important;
+}
+
+@media (max-width: 430px) {
+
+  .title-long {
+    font-size: 30px;
+  }
+
 }
